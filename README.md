@@ -9,7 +9,8 @@ var_dump($filter->filter($a,'d'));
 ```
 
 ## Use in Laravel/Lumen
-move filter.php to app/Libs
+
+### move filter.php to app/Libs
 
 ### Copy the following code to composer.json
 ```
