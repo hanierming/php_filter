@@ -1,5 +1,5 @@
 # php_filter
-## This is a php filter parameter class
+## This is a php parameter filter class
 
 ## Use
 ```
