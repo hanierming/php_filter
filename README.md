@@ -38,3 +38,6 @@ if (!function_exists('filter')) {
 $a = $request->get('a');
 filter($a,'d');
 ```
+
+
+Modification based on thinkPHP 5
