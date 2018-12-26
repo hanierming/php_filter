@@ -1,23 +1,28 @@
 # php_filter
-###php参数过滤类
+##This is a php filter parameter class
 
-##Use
+## Use
+```
 $filter = Filter::instance();
-$data = $_GET['a'];
-var_dump($filter->filter(NULL,'d'));
+$a = $_GET['a'];
+var_dump($filter->filter($a,'d'));
+```
 
-##Laravel/Lumen Use
+## Use in Laravel/Lumen
 move filter.php to app/Libs
 
-add
+### Copy the following code to composer.json
+```
 "autoload": {
 	"files": [
 		"app/Helpers/functions.php"
 	]
 },
-in composer.json
+```
 
-add
+
+### Copy the following code to app/Helpers/functions.php, if file non-existent, you can create it.
+```
 <?php
 if (!function_exists('filter')) {
 	function filter($value, $type) {
@@ -25,8 +30,10 @@ if (!function_exists('filter')) {
 		return $filter->filter($value, $type);
 	}
 }
-in app/Helpers/functions.php
+```
 
-#use
+### Use in code
+```
 $a = $request->get('a');
 filter($a,'d');
+```
