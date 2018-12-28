@@ -7,6 +7,12 @@ $filter = Filter::instance();
 $a = $_GET['a'];
 var_dump($filter->filter($a,'d'));
 ```
+the second parameter supports the following parameters：
+'d' => int
+'s' => string
+'a' => array
+'f' => float
+'b' => bool
 
 ## Use in Laravel/Lumen
 
